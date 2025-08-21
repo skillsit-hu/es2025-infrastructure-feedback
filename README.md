@@ -4,8 +4,6 @@
 
 ### React
 
-[Repo](https://github.com/skill-setup/react-vite-js-base)
-
 #### Pull Requests
 
 ##### [Configure Nginx for frontend routing, add missing dependencies, and fix Tailwind setup in Vite #1](https://github.com/skill-setup/react-vite-js-base/pull/1)
@@ -18,8 +16,6 @@
 - Fixed vite.config.js to include the @tailwindcss/vite plugin alongside React, enabling Tailwind CSS integration with Vite.
 
 ### Laravel
-
-[Repo](https://github.com/skill-setup/laravel-base)
 
 #### Pull Requests
 
@@ -43,8 +39,6 @@
 - Remove .env from .gitignore for version control
 
 ## Infra (Competition Scripts)
-
-[Repo](https://github.com/skill-setup/competition-scripts)
 
 ### Pull Requests
 
