@@ -6,13 +6,11 @@
 
 [Repo](https://github.com/skill-setup/react-vite-js-base)
 
-## Pull Requests
+#### Pull Requests
 
-### [Add missing dependencies and fix Tailwind setup in Vite #2](https://github.com/skill-setup/react-vite-js-base/pull/1)
+##### [Configure Nginx for frontend routing, add missing dependencies, and fix Tailwind setup in Vite #1](https://github.com/skill-setup/react-vite-js-base/pull/1)
 
 **Issue**: Missing dependencies and incorrect Tailwind configuration in the Vite setup. Nginx does not properly redirect all requests to index.html, causing hard refresh functionality to fail.
-
-### Configure Nginx for frontend routing, add missing dependencies, and fix Tailwind setup in Vite #1
 
 - Added a custom nginx.conf file to configure Nginx for serving the frontend, including support for client-side routing with try_files.
 - Updated the Dockerfile to copy the new nginx.conf into the Nginx container, ensuring the server uses the custom configuration.
@@ -23,9 +21,9 @@
 
 [Repo](https://github.com/skill-setup/laravel-base)
 
-## Pull Requests
+#### Pull Requests
 
-### [Feat/improve dockerfile performance #1](https://github.com/skill-setup/laravel-base/pull/1)
+##### [Feat/improve dockerfile performance #1](https://github.com/skill-setup/laravel-base/pull/1)
 
 **Issue**: Performance issue with the Dockerfile.
 
@@ -37,7 +35,7 @@
 
 **Note**: According to our tests, the new setup reduced the build time from 4.5 minutes to 1 minute in our environment.
 
-### [feat: add environment configuration #2](https://github.com/skill-setup/laravel-base/pull/1)
+##### [feat: add environment configuration #2](https://github.com/skill-setup/laravel-base/pull/1)
 
 **Issue**: The template does not include a .env file, and .env is listed in .gitignore. Competitors are required to commit and push their .env file to the Git server for proper deployment.
 
@@ -48,17 +46,17 @@
 
 [Repo](https://github.com/skill-setup/competition-scripts)
 
-## Pull Requests
+### Pull Requests
+
+##### [Automate user secrets setup and add .env file support with updated documentation #8](https://github.com/skill-setup/competition-scripts/pull/8)
 
 **Issue**: The initialization script (`init.sh`) does not create user-level secrets automatically; this must be done manually by competitors.
-
-### [Automate user secrets setup and add .env file support with updated documentation #8](https://github.com/skill-setup/competition-scripts/pull/8)
 
 - The initialization script (`init.sh`) now automatically creates user-level secrets (USER and PASS) for each user using the Gitea API, eliminating the need for manual configuration.
 - The script writes all relevant environment variables to a new .env file, making it easier to manage and reference configuration values. The script now strips carriage returns and newlines from values read from config/main to prevent formatting issues.
 - The README has been updated to remove the step instructing users to manually set up action secrets, reflecting the new automated approach.
 
-### [Feat/add verdaccio #9](https://github.com/skill-setup/competition-scripts/pull/9)
+##### [Feat/add verdaccio #9](https://github.com/skill-setup/competition-scripts/pull/9)
 
 **Issue**: No npm cache is implemented in the competition environment.
 
