@@ -40,7 +40,7 @@
 
 ## Infra (Competition Scripts)
 
-### Pull Requests
+#### Pull Requests
 
 ##### [Automate user secrets setup and add .env file support with updated documentation #8](https://github.com/skill-setup/competition-scripts/pull/8)
 
